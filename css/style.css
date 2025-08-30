@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #2874f0;
+    height: 58px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0px 25px;
+}
+
+nav ul {
+    display: flex;
+    height: 58px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 27px;
+    width: 493px;
+    border-radius: 2px;
+    margin: 0 56px;
+    border: none;
+}
+
+.search-icon {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 940px;
+    cursor: pointer;
+}
+
+/* main {
+    height: calc(100vh - 58px - 12vh);
+} */
+
+.slider {
+    margin: 12px auto;
+    /* width: 95vw; */
+    display: flex;
+
+}
+
+.img1 {
+    width: 90vw;
+    height: 270px;
+    margin: auto 10vw;
+    border-radius: 5px;
+    transform: translateX(0vw);
+
+    animation: slide 10s infinite;
+}
+
+.img2 {
+    width: 90vw;
+    height: 270px;
+    margin: auto 10vw;
+    border-radius: 5px;
+    transform: translateX(100vw);
+    animation: slide 10s infinite;
+}
+
+.img3 {
+    width: 90vw;
+    height: 270px;
+    margin: auto 10vw;
+    border-radius: 5px;
+    transform: translateX(-100vw);
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-115vw);
+    }
+
+    50% {
+        transform: translateX(-225vw);
+    }
+
+    75% {
+        transform: translateX(-115vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.cards {
+    width: 95vw;
+    margin: 20px auto;
+    padding: 20px 0px;
+    border: 1px solid #e3dddd;
+    border-radius: 2px;
+
+}
+
+.card {
+    padding: 0 60px;
+
+}
+
+.cards h2 {
+    font-family: 'ubuntu', sans-serif;
+    margin: 5px auto 20px 20px;
+}
+
+footer {
+    background-color: #2874f0;
+    color: white;
+    height: 12vh;
+    font-family: 'Lato', sans-serif;
+}
